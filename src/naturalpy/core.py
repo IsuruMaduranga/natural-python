@@ -62,6 +62,7 @@ def natural(func=None, *, model="gpt-4o-2024-08-06", temperature=0.7, max_tokens
                     "messages": [{"role": "user", "content": prompt}],
                     "response_model": return_type,
                     "temperature": temperature,
+                    **extra_params
                 }
 
                 # Add max_tokens if specified
